@@ -76,7 +76,8 @@ public abstract class AbstractItemClickListener implements RecyclerView.OnItemTo
 
     @Override
     public boolean onInterceptTouchEvent(RecyclerView view, MotionEvent e) {
-        return mGestureDetector.onTouchEvent(e);
+        mGestureDetector.onTouchEvent(e);
+        return false;
     }
 
     @Override
