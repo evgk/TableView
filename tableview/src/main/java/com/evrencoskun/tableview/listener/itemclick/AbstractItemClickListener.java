@@ -54,7 +54,8 @@ public abstract class AbstractItemClickListener implements RecyclerView.OnItemTo
 
             @Override
             public boolean onSingleTapConfirmed(MotionEvent e) {
-                return clickAction(mRecyclerView, e);
+                //return clickAction(mRecyclerView, e);
+                return false;
             }
 
             @Override
